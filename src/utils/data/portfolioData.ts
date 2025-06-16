@@ -1,6 +1,14 @@
+export interface Project {
+  id: number;
+  title: string;
+  image: string;
+  category: string;
+  description: string;
+}
+
 export const categories = ['Branding', 'Web Development', 'UI/UX', 'Marketing'];
 
-const portfolioData = [
+const portfolioData: Project[] = [
   {
     id: 1,
     title: 'TechCorp Website',
@@ -20,7 +28,7 @@ const portfolioData = [
     title: 'GlobalTech UI/UX',
     image: '/portfolio/globaltech.jpg',
     category: 'UI/UX',
-    description: 'UI/UX design for GlobalTech’s new SaaS platform.'
+    description: 'UI/UX design for GlobalTech's new SaaS platform.'
   }
 ];
 

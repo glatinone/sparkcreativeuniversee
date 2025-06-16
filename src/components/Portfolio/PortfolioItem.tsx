@@ -1,12 +1,5 @@
 import Image from 'next/image';
-
-interface Project {
-  id: number;
-  title: string;
-  image: string;
-  category: string;
-  description: string;
-}
+import { Project } from '../../utils/data/portfolioData';
 
 interface PortfolioItemProps {
   project: Project;

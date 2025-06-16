@@ -1,12 +1,5 @@
+import { Project } from '../../utils/data/portfolioData';
 import Image from 'next/image';
-
-interface Project {
-  id: number;
-  title: string;
-  image: string;
-  category: string;
-  description: string;
-}
 
 interface PortfolioModalProps {
   project: Project | null;

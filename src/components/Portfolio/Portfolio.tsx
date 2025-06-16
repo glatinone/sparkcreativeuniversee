@@ -4,15 +4,7 @@ import 'swiper/css';
 import PortfolioItem from './PortfolioItem';
 import PortfolioModal from './PortfolioModal';
 import PortfolioFilter from './PortfolioFilter';
-import portfolioData, { categories } from '../../utils/data/portfolioData';
-
-interface Project {
-  id: number;
-  title: string;
-  image: string;
-  category: string;
-  description: string;
-}
+import portfolioData, { categories, Project } from '../../utils/data/portfolioData';
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('All');
