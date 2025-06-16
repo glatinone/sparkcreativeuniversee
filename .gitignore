@@ -1,0 +1,60 @@
+# Dependency directories
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Local env files
+.env*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vercel
+.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Design files (exclude from repo)
+*.psd
+*.ai
+*.xd
+*.sketch
+*.fig
+*.xcf
+
+# Large image/raw files (exclude from repo)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.heic
+*.tiff
+*.bmp
+*.svg
+
+# Backup/temporary files
+*.bak
+*.tmp
+~$*
+
+# Shell scripts (optional, uncomment if you don't want to push)
+#*.sh 
