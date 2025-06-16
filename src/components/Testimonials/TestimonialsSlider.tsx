@@ -8,7 +8,7 @@ const testimonials = [
     name: 'Sarah Johnson',
     role: 'CEO, TechCorp',
     image: '/clients/sarah.jpg',
-    text: 'SPARKS transformed our digital presence completely. Their team's creativity and technical expertise exceeded our expectations.'
+    text: "SPARKS transformed our digital presence completely. Their team's creativity and technical expertise exceeded our expectations."
   },
   {
     id: 2,
