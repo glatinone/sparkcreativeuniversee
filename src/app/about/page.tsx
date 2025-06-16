@@ -11,7 +11,7 @@ const teamMembers = [
     id: 1,
     name: 'Okto Siagian',
     role: 'Founder',
-    image: '/about/okto.jpg.jpg',
+    image: '/about/okto.jpg',
     bio: 'Dengan pengalaman 7 tahun di industri kreatif, Okto memimpin tim dengan visi yang kuat untuk menciptakan solusi digital yang inovatif. Spesialisasi dalam brand strategy dan creative direction.',
     social: {
       instagram: 'https://www.instagram.com/oktosiagian/',
@@ -23,7 +23,7 @@ const teamMembers = [
     id: 2,
     name: 'Agung',
     role: 'Content Director',
-    image: '/about/agung.jpg.jpg',
+    image: '/about/agung.jpg',
     bio: 'Ahli dalam menangkap momen melalui lensa kamera dengan pengalaman 5 tahun. Menguasai teknik fotografi dan videografi modern untuk menciptakan konten visual yang memukau.',
     social: {
       instagram: 'https://www.instagram.com/ardiiansyahagung/',
@@ -35,7 +35,7 @@ const teamMembers = [
     id: 3,
     name: 'Ucup',
     role: 'Creative Director',
-    image: '/about/ucup.jpg.jpg',
+    image: '/about/ucup.jpg',
     bio: 'Editor handal dengan pengalaman 5 tahun dalam post-production dan brand management. Menguasai berbagai software editing dan memiliki keahlian dalam mengembangkan identitas brand yang kuat.',
     social: {
       instagram: 'https://www.instagram.com/saputroyusuf_',
@@ -47,7 +47,7 @@ const teamMembers = [
     id: 4,
     name: 'Kiel',
     role: 'IT Specialist & Web Developer',
-    image: '/about/kiel.jpg.jpg',
+    image: '/about/kiel.jpg',
     bio: 'Spesialis IT dengan pengalaman 4 tahun dalam pengembangan web, AI, dan keamanan siber. Menguasai berbagai teknologi modern dan framework untuk menciptakan solusi digital yang aman dan inovatif.',
     social: {
       instagram: 'https://www.instagram.com/kiel.at/',
@@ -59,7 +59,7 @@ const teamMembers = [
     id: 5,
     name: 'Indi',
     role: 'Experienced Video Editor',
-    image: '/about/sarah.jpg',
+    image: '/about/indi.jpg',
     bio: 'Ahli strategi media sosial dengan pengalaman 3 tahun dalam mengelola kampanye digital yang sukses. Spesialis dalam content planning dan community management untuk meningkatkan engagement brand.',
     social: {
       instagram: 'https://www.instagram.com/sarahcreative/',
@@ -71,7 +71,7 @@ const teamMembers = [
     id: 6,
     name: 'Faiz',
     role: 'Junior Graphic Designer',
-    image: '/about/rizki.jpg',
+    image: '/about/faiz.jpg',
     bio: 'Spesialis pemasaran digital dengan keahlian dalam SEO, SEM, dan analitik. Memiliki track record dalam meningkatkan ROI kampanye digital dan mengoptimalkan strategi pemasaran online.',
     social: {
       instagram: 'https://www.instagram.com/rizkimarketing/',
