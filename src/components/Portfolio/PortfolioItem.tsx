@@ -1,30 +1,33 @@
 import Image from 'next/image';
 
-type Project = {
+interface Project {
   id: number;
   title: string;
   image: string;
   category: string;
   description: string;
-};
+}
 
-type Props = {
+interface PortfolioItemProps {
   project: Project;
   onClick: () => void;
-};
+}
 
-export default function PortfolioItem({ project, onClick }: Props) {
+export default function PortfolioItem({ project, onClick }: PortfolioItemProps) {
   return (
-    <div className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer" onClick={onClick}>
-      <Image src={project.image} alt={project.title} width={400} height={260} className="object-cover w-full h-56" />
-      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity">
-        <button className="px-4 py-2 bg-purple-600 text-white rounded-full font-semibold shadow hover:bg-purple-700 transition-colors">View Details</button>
+    <div className="relative group cursor-pointer" onClick={onClick}>
+      <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-300"
+        />
       </div>
-      <div className="absolute bottom-0 left-0 bg-black/70 text-white px-3 py-2 text-sm rounded-tr-lg">
-        {project.category}
-      </div>
-      <div className="absolute bottom-0 right-0 bg-purple-600 text-white px-3 py-2 text-sm rounded-tl-lg font-bold">
-        {project.title}
+      <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <div className="text-white text-center p-4">
+          <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+          <p className="text-sm">{project.category}</p>
+        </div>
       </div>
     </div>
   );

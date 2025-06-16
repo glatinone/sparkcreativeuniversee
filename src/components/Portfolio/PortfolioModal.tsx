@@ -1,32 +1,44 @@
 import Image from 'next/image';
 
-type Project = {
+interface Project {
   id: number;
   title: string;
   image: string;
   category: string;
   description: string;
-};
+}
 
-type Props = {
+interface PortfolioModalProps {
   project: Project | null;
   onClose: () => void;
-};
+}
 
-export default function PortfolioModal({ project, onClose }: Props) {
+export default function PortfolioModal({ project, onClose }: PortfolioModalProps) {
   if (!project) return null;
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-      <div className="bg-white rounded-lg shadow-xl max-w-lg w-full p-6 relative">
-        <button className="absolute top-3 right-3 text-gray-600 hover:text-purple-600" onClick={onClose} aria-label="Close">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <Image src={project.image} alt={project.title} width={500} height={300} className="rounded mb-4 object-cover w-full h-48" />
-        <h3 className="text-2xl font-bold mb-2 text-gray-900">{project.title}</h3>
-        <p className="text-gray-700 mb-2">{project.description}</p>
-        <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">{project.category}</span>
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="relative">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-64 object-cover rounded-t-lg"
+          />
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div className="p-6">
+          <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+          <p className="text-gray-600 mb-4">{project.category}</p>
+          <p className="text-gray-700">{project.description}</p>
+        </div>
       </div>
     </div>
   );

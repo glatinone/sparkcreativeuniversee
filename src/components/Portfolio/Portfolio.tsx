@@ -6,9 +6,17 @@ import PortfolioModal from './PortfolioModal';
 import PortfolioFilter from './PortfolioFilter';
 import portfolioData, { categories } from '../../utils/data/portfolioData';
 
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  category: string;
+  description: string;
+}
+
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [modalProject, setModalProject] = useState(null);
+  const [modalProject, setModalProject] = useState<Project | null>(null);
   const filtered = selectedCategory === 'All' ? portfolioData : portfolioData.filter(p => p.category === selectedCategory);
 
   return (
