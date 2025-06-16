@@ -28,7 +28,7 @@ const portfolioData: Project[] = [
     title: 'GlobalTech UI/UX',
     image: '/portfolio/globaltech.jpg',
     category: 'UI/UX',
-    description: 'UI/UX design for GlobalTech's new SaaS platform.'
+    description: "UI/UX design for GlobalTech's new SaaS platform."
   }
 ];
 
