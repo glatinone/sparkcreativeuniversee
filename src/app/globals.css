@@ -13,11 +13,7 @@
 @layer base {
   body {
     color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-      to bottom,
-      rgb(var(--background-start-rgb)),
-      rgb(var(--background-end-rgb))
-    );
+    background: #000;
     min-height: 100vh;
   }
 }
@@ -123,6 +119,10 @@
   }
   .prose .tips-box {
     @apply bg-neon-purple/10 border-l-4 border-neon-purple p-4 my-6 rounded;
+  }
+  .font-display {
+    font-family: var(--font-sora), 'Sora', 'Poppins', 'Inter', sans-serif;
+    letter-spacing: -0.01em;
   }
 }
 

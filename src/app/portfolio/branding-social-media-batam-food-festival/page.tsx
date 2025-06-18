@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Branding & Social Media - Batam Food Festival',
     description: 'Pengembangan brand identity dan pengelolaan social media untuk festival kuliner terbesar di Batam.',
-    images: ['/portfolio/images/batam-food-fest.jpg.jpg'],
+    images: ['/portfolio/images/batam-food-fest.jpg'],
   },
 }
 
@@ -24,7 +24,7 @@ const BatamFoodFestival = () => {
           {/* Hero Section */}
           <div className="relative h-[70vh] mb-16 rounded-2xl overflow-hidden">
             <Image
-              src="/portfolio/images/batam-food-fest.jpg.jpg"
+              src="/portfolio/images/batam-food-fest.jpg"
               alt="Batam Food Festival - Festival Kuliner Terbesar di Batam"
               fill
               className="object-cover"

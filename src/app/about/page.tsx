@@ -59,7 +59,7 @@ const teamMembers = [
     id: 5,
     name: 'Indi',
     role: 'Experienced Video Editor',
-    image: '/about/indi.jpg',
+    image: '/about/indi.png',
     bio: 'Ahli strategi media sosial dengan pengalaman 3 tahun dalam mengelola kampanye digital yang sukses. Spesialis dalam content planning dan community management untuk meningkatkan engagement brand.',
     social: {
       instagram: 'https://www.instagram.com/sarahcreative/',

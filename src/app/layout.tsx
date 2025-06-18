@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
+import { Sora } from 'next/font/google'
 import './globals.css'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
@@ -9,6 +10,11 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   variable: '--font-poppins',
+})
+const sora = Sora({
+  weight: ['400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  variable: '--font-sora',
 })
 
 export const metadata: Metadata = {
@@ -22,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="id" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="font-sans bg-secondary text-white">
+    <html lang="id" className={`${inter.variable} ${poppins.variable} ${sora.variable}`}>
+      <body className="font-sans bg-black text-white">
         {children}
         <WhatsAppButton />
         <footer className="py-6 text-center text-gray-400 border-t border-neon-purple/20">
